@@ -11,6 +11,7 @@ body {
   background-color: white;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -48,14 +49,45 @@ body {
   .navigation__dropdown-button-section .navigation__button {
     border-radius: 5px;
     background-color: #292929;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     display: inline-block;
     box-shadow: 0px -1px 5px #ff0003;
     position: absolute;
     top: 9px;
     right: 25px;
+    display: flex;
+    justify-content: center;
   }
+}
+.navigation__dropdown-button-section .navigation__button .navigation__icon {
+  width: 30px;
+  height: 1px;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.navigation__dropdown-button-section .navigation__button .navigation__icon::before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #eaf0ce;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+}
+.navigation__dropdown-button-section .navigation__button .navigation__icon::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  background-color: #788475;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
 }
 @media (max-width: 600px) {
   .navigation__dropdown-button-section .navigation__nav {
