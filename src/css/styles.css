@@ -102,6 +102,11 @@ body {
   background-size: cover;
   position: relative;
 }
+@media (max-width: 600px) {
+  .main__container {
+    background-image: url(../../assets/images/mobile-background.png);
+  }
+}
 .main__container .name__section {
   position: absolute;
   font-size: 16px;
