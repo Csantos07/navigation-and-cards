@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap');
+
+.navigation {
+
+  &__container {
+    max-height: 70px;
+    background-color: #292929;
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    a,
+    a:visited {
+      text-decoration: none;
+      color: #768273;
+      font-family: quicksand;
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+  }
+
+  &__logo-section {
+    color: white;
+  }
+
+  &__dropdown-button-section {
+    .navigation__checkbox, .navigation__button {
+      display: none;
+    }
+
+    .navigation__button {
+      @include respond-phone {
+        // background-color: #292929;
+        // height: 50px;
+        // width: 50px;
+        // display: inline-block;
+        border-radius: 5px;
+        background-color: #292929;
+        height: 45px;
+        width: 45px;
+        display: inline-block;
+        box-shadow: 0px -1px 5px #ff0003;
+        position: absolute;
+        top: 9px;
+        right: 25px;
+      }
+    }
+
+    .navigation__nav {
+      @include respond-phone {
+        display: none;
+      }
+    }
+  }
+}

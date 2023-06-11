@@ -1,0 +1,83 @@
+/*
+0 - 600px:    Phone
+600 - 900px:  Tabelet Portrait
+900 - 1200px: Tablet landscape
+[1200 -1800]  is where our normal styles apply
+1800px + :    Big desktop
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Quicksand:wght@300&family=Roboto:wght@100&display=swap");
+body {
+  min-height: 100vh;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  height: 10vh;
+  background-color: #292929;
+}
+
+.navigation__container {
+  max-height: 70px;
+  background-color: #292929;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__container li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navigation__container a,
+.navigation__container a:visited {
+  text-decoration: none;
+  color: #768273;
+  font-family: quicksand;
+}
+.navigation__logo {
+  width: 8rem;
+}
+.navigation__logo-section {
+  color: white;
+}
+.navigation__dropdown-button-section .navigation__checkbox, .navigation__dropdown-button-section .navigation__button {
+  display: none;
+}
+@media (max-width: 600px) {
+  .navigation__dropdown-button-section .navigation__button {
+    border-radius: 5px;
+    background-color: #292929;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    box-shadow: 0px -1px 5px #ff0003;
+    position: absolute;
+    top: 9px;
+    right: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .navigation__dropdown-button-section .navigation__nav {
+    display: none;
+  }
+}
+
+.main__container {
+  height: 85vh;
+  background-color: #787b6c;
+  background-image: url(../../../assets/images/background-image.png);
+  background-size: cover;
+  position: relative;
+}
+.main__container .name__section {
+  position: absolute;
+  font-size: 16px;
+  display: inline-block;
+  bottom: 10px;
+  left: 0px;
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
