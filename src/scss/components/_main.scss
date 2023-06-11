@@ -5,6 +5,10 @@
   background-size: cover;
   position: relative;
 
+  @include respond-phone {
+    background-image: url(../../assets/images/mobile-background.png);
+  }
+
   .name__section {
     position: absolute;
     font-size: 16px;
