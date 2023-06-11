@@ -111,5 +111,8 @@ body {
   padding: 20px 25px;
   border-radius: 10px;
 }
+.main__container .name-in-main {
+  width: 200px;
+}
 
 /*# sourceMappingURL=styles.css.map */
