@@ -4,6 +4,7 @@
   background-image: url(../../assets/images/background-image.png);
   background-size: cover;
   position: relative;
+  padding-top: 50px;
 
   @include respond-phone {
     background-image: url(../../assets/images/mobile-background.png);
