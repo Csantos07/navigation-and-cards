@@ -38,11 +38,11 @@
       display: none;
     }
 
-    // .navigation__nav {
-    //   @include respond-phone {
-    //     display: none;
-    //   }
-    // }
+    .navigation__nav {
+      @include respond-phone {
+        display: none;
+      }
+    }
 
     .navigation__button {
       @include respond-phone {

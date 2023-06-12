@@ -52,6 +52,11 @@ body {
   display: none;
 }
 @media (max-width: 600px) {
+  .navigation__dropdown-button-section .navigation__nav {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
   .navigation__dropdown-button-section .navigation__button {
     border-radius: 5px;
     background-color: #292929;
