@@ -87,23 +87,7 @@
         position: absolute;
         top: 10px;
       }
-
-      // #navi-toggle:checked ~ .navigation__nav {
-      //   @include respond-phone {
-      //     background-color: yellow;
-      //     display: block;
-      //   }
-      // }
     }
-
-    // #navi-toggle:checked ~ .navigation__nav {
-    //   @include respond-phone {
-    //     background-color: yellow;
-    //     // width: 100%;
-    //     height: 600px;
-    //     top: 100px;
-    //   }
-    // }
   }
 }
 
@@ -117,7 +101,7 @@
       opacity: 0;
       width: 100%;
 
-      font-size: 60px;
+      font-size: 100px;
       // text-align: center;
 
       a,
