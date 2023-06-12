@@ -8,7 +8,16 @@
   <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Projects</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Hire</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Learn</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="navigation__container">
 
     <div class="navigation__logo-section">
@@ -52,5 +61,23 @@
   <div class="footer">
 
   </div>
+
+  <script>
+    var checkbox = document.getElementById('navi-toggle');
+    let mobileMenu = document.getElementById('mobile-menu')
+
+    checkbox.addEventListener('change', function() {
+      if(this.checked) {
+        console.log('Checkbox is checked');
+        mobileMenu.classList.add('slide-down')
+        // add visibility to menu
+
+      } else {
+        console.log('Checkbox is not checked');
+        mobileMenu.classList.remove('slide-down')
+        // remove visibility
+      }
+    });
+  </script>
 </body>
 </html>
