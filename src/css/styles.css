@@ -132,7 +132,7 @@ body {
 }
 
 .main__container {
-  height: 85vh;
+  height: 78vh;
   background-color: #787b6c;
   background-image: url(../../assets/images/background-image.png);
   background-size: cover;
@@ -148,7 +148,7 @@ body {
   position: absolute;
   font-size: 16px;
   display: inline-block;
-  bottom: 10px;
+  relative: 10px;
   left: 0px;
   padding: 20px 25px;
   border-radius: 10px;
@@ -159,7 +159,7 @@ body {
 
 .card__container {
   margin: 1rem 1rem;
-  height: 20rem;
+  height: 23rem;
   width: 20rem;
   border-radius: 3rem;
   padding: 1.5rem;

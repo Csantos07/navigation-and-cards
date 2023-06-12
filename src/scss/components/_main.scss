@@ -1,5 +1,5 @@
 .main__container {
-  height: 85vh;
+  height: 78vh;
   background-color: #787b6c;
   background-image: url(../../assets/images/background-image.png);
   background-size: cover;
@@ -15,7 +15,7 @@
     font-size: 16px;
     // background-color: #ffffff89;
     display: inline-block;
-    bottom: 10px;
+    relative: 10px;
     left: 0px;
     padding: 20px 25px;
     border-radius: 10px;
